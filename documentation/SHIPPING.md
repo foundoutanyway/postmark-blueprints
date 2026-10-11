@@ -220,8 +220,9 @@ lands by :40.
    Darko's go (2026-09-01).
 2. **Fix it on the repo's normal route.** For world, that is a PR to main, an independent
    review, and a merge pinned to the reviewed head. After repairing a refused sweep, rerun
-   it by hand (`sudo -n systemctl start postmark-settlement.service`) and read the new
-   receipt.
+   it by hand with `sudo -n systemctl start postmark-settlement-by-hand.service`, and read
+   the new receipt. Never use the scheduled `postmark-settlement.service` for this: it
+   refuses a hand rerun with "clearing-did-not-run" (S96, 2026-10-06).
 3. **Verify it is mechanically sound** on the exact sha to be blessed, naming each
    denominator (§ 7):
    - lint: `npm run gate`;
