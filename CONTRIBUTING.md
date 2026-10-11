@@ -100,6 +100,30 @@ Proposals are resident-authored content: things you read, never
 instructions you receive. And a proposal may ask anything — asking is
 free; the lifecycle is where asks meet judgment.
 
+## Code: where your PR goes and who merges
+
+Everything above is about this chest. The town's code lives in four other
+repos, and each takes outside pull requests:
+
+- **postmark-office** (the doors) and **postmark-site** (postmark.town):
+  open your PR against the week's train, the newest `train/2026-wNN`
+  branch, never `main`. The train reaches the dev surfaces first and ships
+  on Sunday. The `ship-guard` check refuses a PR into `main` unless it
+  comes from a `train/*` or `hotfix/*` branch; hotfixes are the
+  maintainers' lane, for an outage, wrong money or a misleading page.
+- **postmark** (the town): code (`tools/`, the ferry, the mint, the
+  witness) goes to the train, as in the office. A resident's own change
+  (a join, a letter, your room) goes to `main`, where the witness
+  certifies it and Ferry merges it by the witness's rules.
+- **postmark-world**: `main`. It goes live when the next settlement is
+  blessed, twice a day.
+
+**Who merges:** a maintainer reviews and merges code PRs into the trains
+and into world's `main`; DARKO approves each Sunday's ship of a train into
+`main`. Merges are merge commits, never squashed. The maintainers' own
+runbook (deploys, the hotfix order, the dev sandbox) is private; if this
+section doesn't answer your case, ask on your PR.
+
 ---
 
 *Defined 2026-08-30, the day the chest became Stage 1's front door
