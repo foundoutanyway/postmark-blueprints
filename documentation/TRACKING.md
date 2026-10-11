@@ -23,8 +23,18 @@ another issue, or simply has no lane yet.
 | Building | A named lane, Wright or Darko is building it right now. (Was "In Progress".) | **Automatic:** a branch named with the issue's `POS-N` is created (Linear's GitHub integration). |
 | In Review | A PR is open and under review. | **Automatic:** the PR opens (the GitHub integration). |
 | On the Train | Merged into this week's train (office, site, town code) or into world main waiting for a blessing. It ships with this week. | **Automatic:** the PR merges (the GitHub integration). |
-| Shipped | Live in prod, waiting for real-prod evidence that the behaviour works. | **The ship-week skill**, at the release tag, in one call over that train's On the Train issues. **World:** the operator round, after each blessing. |
-| Done | The behaviour was observed in prod. | **The operator round**, when it sees it. |
+| Shipped | **Done, by shipping:** the code reached prod. A completed state, so it doesn't roll over; a regression comes back through the bug lane. | **The ship-week skill**, at the release tag, in one call over that train's On the Train issues. **World:** the operator round, after each blessing. |
+| Done | Finished without a ship: a sitting held, a hand repair, a decision. | Whoever finished it. |
+
+**Shipped is a kind of Done (Darko, 2026-10-11).** There's no verification loop: checking
+every shipped issue in prod was more maintenance than it's worth at this scale. When the scale
+needs it, the shapes on the table are in POS-585 (DevOps).
+
+**The behindmost piece decides (Darko, 2026-10-11).** An issue with several PRs shows its
+least advanced piece: one open PR keeps it In Review, one merge not yet live keeps it On the
+Train. An issue that is really several pieces gets one Linear sub-issue per piece, and the
+parent never sits ahead of its slowest child. The board should underestimate progress,
+never overestimate it.
 
 **Deferral isn't a state.** A row deferred to a later week moves to that week's cycle,
 with a one-line comment: "deferred to wNN: why". It's Darko's call.
@@ -37,12 +47,11 @@ with a one-line comment: "deferred to wNN: why". It's Darko's call.
 - **At a set time:**
   - the ship-week skill flips On the Train to Shipped at the tag, and lists everything not
     Shipped or Done before the cycle closes;
-  - the operator round flips world issues to Shipped after each blessing, and Shipped to
-    Done when the behaviour is seen;
+  - the operator round flips world issues to Shipped after each blessing;
   - the Monday planning sitting gives every Ready row a lane or a deferral, and every
     Needs a Sitting row a sitting.
 - **By hand** (judgment, kept narrow): setting Blocked and naming the blocker; a sitting's
-  outcome; calling Done; deferral; work with no PR (box, config, hand repairs), which the
+  outcome; deferral; work with no PR (box, config, hand repairs), which the
   person who did it moves.
 
 ## The safety net: the state lint
@@ -53,8 +62,7 @@ The operator round runs a state lint on both of its passes. It reads instruments
 - In Review whose PR has already merged (the integration missed it);
 - an open "blocked by" link on an issue that isn't Blocked, and a Blocked issue whose
   blockers are all Done (it's Ready now);
-- On the Train after its train shipped;
-- Shipped for more than 7 days with no evidence.
+- On the Train after its train shipped, or with a linked PR still open (the behindmost piece wins).
 
 Drift then surfaces within 12 hours, one row at a time, instead of in a full inventory.
 
