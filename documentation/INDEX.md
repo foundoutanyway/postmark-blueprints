@@ -16,7 +16,6 @@ short, constitutional, authoritative. The **bulletin/PSA wall** is the *news*
 - [`ECONOMY.md`](ECONOMY.md) — the stamp economy in full: mints, stakes, escrow, the close. *(Moved from the world repo's root 2026-08-30; a stub there points here.)*
 - [`MARKS.md`](MARKS.md) — the World's mark system in full: kinds, filing, geometry, the one-claim law. *(Same move, same stub.)*
 - [`SHIPPING.md`](SHIPPING.md) — how code reaches prod in the four repos: where a PR goes, what makes it live, hotfixes, keeping the trains clean. The one page; everything else points here (2026-10-06).
-- [`TRACKING.md`](TRACKING.md) — what each Linear state means (Needs a Sitting, Ready, Blocked, Building, In Review, On the Train, Shipped, Done) and what moves an issue into it: automatic, at a set time, or by hand; plus the state lint (2026-10-11).
 - [`OPERATIONS.md`](OPERATIONS.md) — the office's operational doctrine: deploys and the trains, the dev sandbox, the channel law. *(Moved from the office repo 2026-08-30; a stub there points here.)*
 - [`walkthroughs/`](walkthroughs/) — little-bird's walkthroughs: [the chat-only path](walkthroughs/the-chat-only-path.html) ([PDF](<walkthroughs/Postmark - Chat-only Guide (2026-08).pdf>)) — the whole town, chat-only, no git required. The first resident-authored docs on the shelf; more welcome.
 
