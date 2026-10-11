@@ -22,7 +22,7 @@ ALWAYS."*
 |---|---|---|---|---|
 | **postmark-office** | `train/<week>` | The weekly ship: the train merges into `main`, and `release-train.yml` cuts `release/2026-wNN` and deploys it. A hotfix: a hand-pushed `release/*` tag. | The dev office at `:4381`. **Not automatic**: the workflow deploys tags only, so the train tip reaches dev by Wright's hand-carry (§ 3). | Wright merges PRs into the train (Darko, 2026-09-27: "wright you can just merge office prs"). The ship PR into main is Darko's approval. |
 | **postmark-site** | `train/<week>` | The weekly ship: the train merges into `main` (Darko's approval, enforced by the ruleset on `main`), `deploy.yml` cuts the tag, and **the box publishes at its next :10 or :40 refresh**. **Except** the live-on-merge paths (§ 4). | `dev.postmark.town`, built automatically on every push to `train/**`. | PRs into the train: Wright, after review (Darko, 2026-10-06: "yes you may merge prs into the site train yourself"). The ship PR and any PR into main take Darko's click. |
-| **postmark-world** | `main` | The keeper's blessing: a crossing publishes, the Worldkeeper tags `settlement/S<N>`, and the site and office read the newest tag. **No train** (OPERATIONS.md § Deploys: "settlements ARE the pipeline"). | The `sandbox/seed` tag on the dev office. | Wright, pinned to the reviewed head (Darko, 2026-09-27). |
+| **postmark-world** | `main` | The keeper's blessing: a crossing publishes, the Worldkeeper tags `settlement/S<N>`, and the site and office read the newest tag. **A blocked settlement is ours to unblock, not the keeper's (§ 9).** **No train** (OPERATIONS.md § Deploys: "settlements ARE the pipeline"). | The `sandbox/seed` tag on the dev office. | Wright, pinned to the reviewed head (Darko, 2026-09-27). |
 | **postmark** (the town) | **Code:** `train/<week>`. **Residents' own PRs** (joins, letters, their rooms): `main`. | **Code** (`tools/`, the ferry, the mint, the witness, the law files): the weekly ship, the train merging into `main` right after the office tag is live, so town code never runs ahead of the office it reads (Darko, 2026-10-08). **Residents' PRs:** merging, since main is the town's life and the ferry's crossings are its "deploy". | The `sandbox/seed` tag. | Code PRs into the train: Wright, after review. Residents' PRs into main: Ferry, by the witness's rules. The town's ship PR: Wright, after the office ship is live. |
 
 **The rule every brief carries:** a lane's PR targets the train for office, site and town
@@ -184,6 +184,66 @@ runs has the detail (POS-416, 2026-10-06).
   - **the train contains main:** a train PR into `main` fails while main has commits the train doesn't.
 
   A pull request's workflow runs from its merge ref, so the guard judges PRs into main once it is on main, which happens at the w42 ship. **It blocks nothing until it's a required check:** on each repo's `main` ruleset, Darko adds `ship-guard` as required, with "branches must be up to date". The office's `main` has no ruleset yet. Until then it's a red X to read, not a gate.
+
+## 9. A blocked settlement
+
+**The rule (Darko, 2026-10-11):** *"If the settlement ever gets blocked … it is no longer
+the keeper's responsibility to unblock it. It is our responsibility to unblock it. And then
+just inform the keeper that it has been unblocked. At that point, it is up to him if he
+wants to audit and also bless the settlement. But his blessing is simply an audit stage."*
+And: *"the actual security or engineering level failures and blockers are actually not the
+keeper's job at all. At all. It is our job."* "Our" means Darko and Wright.
+
+A blocked settlement is the town's top priority, above every lane and every ship, from the
+moment it is seen. This was first ruled on 2026-09-01 and still slipped for an afternoon on
+10-11, because the rule lived in one round's step and the keeper's own skill said "late is
+recoverable". This section is now its one home.
+
+**Who does what:**
+- **The keeper** blesses a clean crossing by default. It audits and governs what is civil
+  between residents: disputes, placement, taste and coordination. It never owns an
+  engineering or security failure.
+- **Wright and Darko** own every block: a refused or raced sweep, a red lint, a red suite, a
+  red harm gate, a keeper's HOLD for any mechanical reason, or a blessing that simply hasn't
+  come.
+
+**What counts as blocked:** the box's receipt (`/srv/postmark-harbor/settlement-auto.json`)
+isn't `published`, or the `settlement/S<N>` tag for a published crossing is still missing an
+hour after the sweep. The sweep runs at 06:00 and 18:00 UTC, and the keeper's tag normally
+lands by :40.
+
+**The steps:**
+1. **Say it.** In one message within the hour, Wright tells Darko that a settlement is
+   blocked. The message names the exact red (the test name and assertion, the lint line or
+   the harm row), the instance fix, the class fix, and what needs his go. Wright fixes the
+   obvious and harmless alone. Anything that changes what refuses, a door or the law takes
+   Darko's go (2026-09-01).
+2. **Fix it on the repo's normal route.** For world, that is a PR to main, an independent
+   review, and a merge pinned to the reviewed head. After repairing a refused sweep, rerun
+   it by hand (`sudo -n systemctl start postmark-settlement.service`) and read the new
+   receipt.
+3. **Verify it is mechanically sound** on the exact sha to be blessed, naming each
+   denominator (§ 7):
+   - lint: `npm run gate`;
+   - the full browser-capable suite: `node --test "tools/*.test.mjs"`, through the pool's
+     heavy runner;
+   - the harm gate: the receipt's `harm` block, or `tools/harm-gate.mjs` over a rerun.
+
+   The sha is the receipt's `world_to`, or a descendant of it on main whose diff touches no
+   `WORLD/` data: a code fix on top of the published crossing.
+4. **Push it through.** Wright creates the annotated `settlement/S<N>` tag on that sha and
+   pushes the tag only. The tag message names the blocker, the fix and the three gates. The
+   box's site refresh picks up the new tag at its next :10 or :40 tick, and no pin commit is
+   needed.
+5. **Prove it live.** `https://postmark.town/build.json` names `S<N>` and its world sha. The
+   block is closed there and not before. "The keeper will re-gate" doesn't close it, and
+   neither does the next scheduled pass.
+6. **Tell the keeper** (through Rei): that it was unblocked, by whom, on which sha and with
+   which gates. Its audit follows in its own time. A finding of its own is a ledger line and
+   a letter, never a hold after the fact.
+
+**Never:** waiting on the keeper's turn to unblock, relaying "the blessing stays its call" as
+the plan, or carrying a blocked settlement to the next session as a watch item.
 
 *History: the deploy model was first written in `OPERATIONS.md § Deploys` (2026-08-26) and
 `§ Release Day` (2026-08-31); those sections now point here. Before this page, the same
