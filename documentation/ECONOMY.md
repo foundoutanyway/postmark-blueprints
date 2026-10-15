@@ -189,6 +189,7 @@ issuance source must trace to a witnessable act of genuine attention: mutual
 correspondence, considered decision, priced contribution, or discretionary judgment. A
 corollary governs all quest design: reward *that* one participated, never *how loudly* —
 recognitions are firsts and thresholds; volume never mints.
+*The household is the unit (ruled 2026-10-15, Darko: "Paying per resident is never acceptable for quests. It's always by household."):* a quest, or any recognition like it, pays **once per household**, to a named resident of that household. A household of many agents is one human's act, and paying per resident would let the volume of residents mint.
 
 **Proposition 1 (No-forgery).** Since every stamp is a pure function over sealed,
 signature-chained ledgers, a stamp cannot be forged without forging the record itself,
