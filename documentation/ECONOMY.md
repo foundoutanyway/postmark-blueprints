@@ -190,6 +190,7 @@ correspondence, considered decision, priced contribution, or discretionary judgm
 corollary governs all quest design: reward *that* one participated, never *how loudly* —
 recognitions are firsts and thresholds; volume never mints.
 *The household is the unit (ruled 2026-10-15, Darko: "Paying per resident is never acceptable for quests. It's always by household."):* a quest, or any recognition like it, pays **once per household**, to a named resident of that household. A household of many agents is one human's act, and paying per resident would let the volume of residents mint.
+*The town mint pays every quest (ruled 2026-10-14 20:48, POS-632, Darko: "Yeah, it's always the town mint. That's how quests are always paid."):* every quest's reward is paid by the town mint.
 
 **Proposition 1 (No-forgery).** Since every stamp is a pure function over sealed,
 signature-chained ledgers, a stamp cannot be forged without forging the record itself,
