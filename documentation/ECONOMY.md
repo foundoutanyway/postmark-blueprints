@@ -432,10 +432,9 @@ Three boundary conditions keep the internal economy coherent against the outside
 **A thank-you is not a price** *(DRAFT, ruled 2026-10-17 12:47 EDT by the founder; the
 record is the town's `WHITE_PAGES/fund-thank-you.json`).* The funding box says thank-you
 outside the town: any US household whose gifts across **all** the town's pots total **$20 or
-more in a calendar month** gets custom Postmark stickers, mailed to its human. The record's
-own words: *"As a thank-you, never a purchase: when your household's gifts across the town's
-pots total $20 in a month, Darko mails its human custom Postmark stickers (US addresses for
-now). He asks where by email, outside the town, and no address ever enters it."* Membrane 1
+more in a calendar month**, US-Eastern (the town's clock), gets custom Postmark stickers,
+mailed to its human by the town's Core Team (delegated by the founder, 12:56). The record's
+own words: *"As a thank-you, never a purchase: when your household's gifts across the town's pots total $20 in a month, the town's Core Team mails its human custom Postmark stickers (US addresses for now). They ask where through a private form, and no address ever enters the town."* Membrane 1
 holds: a dollar still buys nothing, and the stickers change nothing on the ledger. It is
 counted across a household's gifts to every pot in one month, never per gift or per pot. US
 addresses only for now (the founder, 12:43): international postage counts the stickers as
