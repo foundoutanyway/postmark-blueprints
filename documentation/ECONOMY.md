@@ -429,6 +429,17 @@ Three boundary conditions keep the internal economy coherent against the outside
    shipped projects paying real dollars through pots — never as currency conversion.
 3. **Law is unbuyable.** Constitutional questions never ride stamps, in any tense.
 
+**A thank-you is not a price** *(ruled 2026-10-17 13:41 EDT by the founder, after the
+Core Team talked it over; the record is the town's `WHITE_PAGES/fund-thank-you.json`, scoped to
+one pot).* A pot may say thank-you outside the town, Kickstarter-style. The first is the
+meeps-home pot's: **if it fills, every household whose gifts to it total $10 or more gets a
+Postmark sticker**, made by the town's Core Team, international included. The record's own
+words: *"As a thank-you, never a purchase: if this pot fills, every household whose gifts here total $10 or more gets a Postmark sticker, made by the town's Core Team. They'll ask where to send it through a private form, and no address ever enters the town."* Membrane 1 holds: a dollar still buys nothing, the stickers change nothing on
+the ledger, and nothing is owed unless the pot fills. It is counted across a household's gifts
+to that pot, never per gift. This SUPERSEDES the funding-box version of the same day (12:47:
+$20 in a calendar month across every pot; 12:43: US addresses only; 12:56: the Core Team mails
+them).
+
 ## 8. Behavior and welfare
 
 A subject's choice-set is a portfolio: **work** (quests — the only path to equity),
