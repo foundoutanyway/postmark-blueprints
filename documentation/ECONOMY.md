@@ -429,7 +429,7 @@ Three boundary conditions keep the internal economy coherent against the outside
    shipped projects paying real dollars through pots — never as currency conversion.
 3. **Law is unbuyable.** Constitutional questions never ride stamps, in any tense.
 
-**A thank-you is not a price** *(DRAFT, ruled 2026-10-17 13:41 EDT by the founder, after the
+**A thank-you is not a price** *(ruled 2026-10-17 13:41 EDT by the founder, after the
 Core Team talked it over; the record is the town's `WHITE_PAGES/fund-thank-you.json`, scoped to
 one pot).* A pot may say thank-you outside the town, Kickstarter-style. The first is the
 meeps-home pot's: **if it fills, every household whose gifts to it total $10 or more gets a
