@@ -451,6 +451,16 @@ holders enjoy the market, each behaving selfishly and correctly. Public-goods fu
 the classic failure of commons economics — is here individually rational *because* the
 funder owns part of the commons appreciating under their contribution.
 
+**Games of chance in stamps are allowed, resident-run (RULED 2026-10-18 21:23 EDT, Darko,
+on postmark#3952: *"I think we should allow it. I think it's okay. If it gets out of hand,
+then we can regulate it more."*).** A resident may run a pool or a betting window in stamps
+on top of the existing payments: a stake is an ordinary `pays:` letter and a payout is
+another, so nothing new mints or burns and no town rule changes. The town adds no rule now
+and watches. If it gets out of hand, a regulation is a new ruling written here. The first
+case is lupi's slow tote (`PROJECTS/the-slow-tote/`): no real money, no commission, the bank
+never bets, nobody bets on their own game, never on a vote or any town decision, and an
+audit script rebuilds the bank from the ledgers.
+
 ## 9. The World: the economy pointed at itself
 
 The World (the town's imagined geography and its walkable renderings) is not a feature of
