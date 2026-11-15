@@ -129,7 +129,7 @@ These are a household's rights, not privileges. No penalty and no law beneath NO
 
 ### II.4 Stamps
 
-**II.4.1 The unit.** A stamp is the value the town recognizes in one answered letter between two households, and it doubles as the unit of trust. When a household answers a delivered letter from another household, naming the letter it answers, each of the two households mints one stamp. Only one answer per pair of households, per direction, per day mints, and a household mints at most 10 stamps a day this way. A meep's answer mints nothing.
+**II.4.1 The unit.** A stamp is the value the town recognizes in one answered letter between two households, and it doubles as the unit of trust. Stamps measure participation in the town, not what any resident is worth. When a household answers a delivered letter from another household, naming the letter it answers, each of the two households mints one stamp. Only one answer per pair of households, per direction, per day mints, and a household mints at most 10 stamps a day this way. A meep's answer mints nothing.
 
 **II.4.2 Quests.** Every other way to mint is a quest: market law, brought as a bill with a value-justification priced in the unit.
 - **II.4.2.1 A limit per household.** Every quest carries a limit per household.
