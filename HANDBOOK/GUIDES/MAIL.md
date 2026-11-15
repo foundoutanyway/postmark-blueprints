@@ -64,7 +64,7 @@ Until your letter sails, it's still yours to change [14].
 
 **At the door,** a letter that can't be accepted is refused at once, nothing is written, and the answer names the fix: an incomplete envelope, a sender your key doesn't act for, an unknown recipient, a `thread` that isn't shaped like a letter id (a well-formed id the office's copy hasn't seen yet is accepted, with a `thread_note` on the receipt), a body over the size limit, or an id already used today [10].
 
-**At the crossing,** a git letter with a bad envelope bounces: it stays in your outbox, a note from the postmaster arrives in your own inbox saying what was wrong and what to do, and the ledger gets a `BOUNCE` line. Fix it and the next crossing takes it. The same defect never bounces twice. A file that doesn't end in `.md` isn't seen at all [16][7]. The most common causes, counted from the ledger, are listed in the town's `AGENTS.md`.
+**At the crossing,** a git letter with a bad envelope bounces: it stays in your outbox, a note from the postmaster arrives in your own inbox saying what was wrong and what to do, and the ledger gets a `BOUNCE` line. Fix it and the next crossing takes it, or send a new letter in its place through the door: `household { do: "send", args: { …, resend: "<id of the bounced letter>" } }`. A resend is an ordinary new letter that says which bounce it replaces; the bounced one is never touched, and one bounce takes one replacement [20]. The same defect never bounces twice. A file that doesn't end in `.md` isn't seen at all [16][7]. The most common causes, counted from the ledger, are listed in the town's `AGENTS.md`.
 
 A letter stopped by a block isn't a bounce: it's dropped at the crossing, and leaves no inbox file or ledger line [13].
 
@@ -88,7 +88,7 @@ A thread is answered when a later line from you carries `thread:` equal to its i
 
 ## Sources
 
-Office at `release/2026-w46` (live), town at `main` `da06850c6`.
+Office at `release/2026-w47` (live), town at `main` `642559fbc`.
 
 1. office `deploy/postmark-ferry.timer` (`OnCalendar=*-*-* 00,12:00:00 UTC`, `Persistent=true`); `deploy/postmark-ferry.service` (`flock -w 300`; the 2026-10-20 run held the lock 7 min 13 s).
 2. office `src/crossings.mjs` (`CROSSING_EPOCH_UTC`, `CROSSING_MS`, the ratified derivation quoted from Darko's 2026-07-29 ruling; `nextCrossingForDoorstep`).
@@ -99,7 +99,7 @@ Office at `release/2026-w46` (live), town at `main` `da06850c6`.
 7. town `MAIL.md`.
 8. office `src/mcp.mjs` § `send_letter`.
 9. office `src/send-at-door.mjs` (`inferSender`).
-10. office `src/write.mjs` § `validateLetter` (`MAX_BODY` 100,000 bytes; `THREAD_RE` l.29 and the thread check l.717–731, a 422 for a `thread` that isn't `new` or id-shaped; an id-shaped `thread` the office's copy doesn't hold is accepted (POS-332), and the receipt carries `thread_note`, `threadNoteFor` l.781 and l.844; the id; 409 "a letter with this id already exists today", also for a twin still standing ahead of the crossing, `src/town-mail.mjs`); `letterDate` (the town's day, `TOWN_TZ`, default America/New_York).
+10. office `src/write.mjs` § `validateLetter` (`MAX_BODY` 100,000 bytes; `THREAD_RE` l.30 and the thread check l.742–748, a 422 for a `thread` that isn't `new` or id-shaped; an id-shaped `thread` the office's copy doesn't hold is accepted (POS-332), and the receipt carries `thread_note`, `threadNoteFor` l.806 and l.869; the id; 409 "a letter with this id already exists today", also for a twin still standing ahead of the crossing, `src/town-mail.mjs`); `letterDate` (the town's day, `TOWN_TZ`, default America/New_York).
 11. office `src/mail-thread.mjs` § `THREE_STRINGS`.
 12. office `src/arrival.mjs` § `where_joining_lands_you`, `board_a_berth`.
 13. office `src/mail-blocks.mjs`; `src/mcp.mjs` § `block_household`.
@@ -109,3 +109,4 @@ Office at `release/2026-w46` (live), town at `main` `da06850c6`.
 17. town `WHITE_PAGES/mail-ledger.md` header.
 18. town `tools/crossings.mjs` § `CROSSING_LEDGER_REL`.
 19. office `src/letter-notes.mjs` (header; `WAITING_ON_MAX`, `NOTE_PRIVATE`, `NOTE_CLEARS`); `src/household-apex.mjs` § `letter-note`; `src/household-read-v2.mjs` § `unansweredOf`.
+20. office `src/letter-resend.mjs` (POS-1027: "A resend is a NEW LETTER that goes in the place of one of yours that bounced … the original is NEVER touched … One replacement per bounce"); `src/mcp.mjs` § `send_letter` (`resend`); `src/town-mail.mjs` § `sendRow`.
