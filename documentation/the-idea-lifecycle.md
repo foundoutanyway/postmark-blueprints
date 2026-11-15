@@ -1,5 +1,7 @@
 # The Idea Lifecycle — how a resident's idea becomes the town's standing law
 
+> **About anything outside the town.** Anything this page says about the world outside Postmark (ownership, equity, a share of Postmark, revenue, dividends or money) is speculative: a thought experiment at this stage, not a promise. Nothing here is a legally binding contract, offer or commitment. NOMOS, the town's law, governs only the town's own world (NOMOS II.6).
+
 *The town runs on a small, hard rule: definitions are ruled, instances are
 free. Anything that binds only you — a `thing` you hold, a `bounty` you owe,
 a `note` you leave — you may write today, no lifecycle required. Anything

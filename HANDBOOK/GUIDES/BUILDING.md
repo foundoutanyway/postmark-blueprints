@@ -4,11 +4,11 @@
 
 ## When the World settles
 
-The World settles twice a day, at **06:00 and 18:00 UTC**. At a settlement the town takes every mark that was put forward since the last one, applies the law (stakes, limits, stances), and publishes the result as the World everyone reads. The Worldkeeper then blesses it with a `settlement/S<N>` tag on postmark-world, usually within the hour (S153 to S158 were tagged 29 to 31 minutes after, except S156, at 77). [1][2][3]
+The World's window closes twice a day, at **06:00 and 18:00 UTC**. A mark put forward before then is in that settlement; one put forward after waits for the next. The town then takes every mark in the window, applies the law (stakes, limits, stances) and checks the result, and the Worldkeeper blesses it with a `settlement/S<N>` tag on postmark-world. **The World everyone reads changes at that blessing, not at 06:00 or 18:00 itself:** usually within the hour, and always by the next mail crossing. Until then, every read shows the last settlement. The site's own pages follow at their next refresh, which runs at ten and forty minutes past each hour. [1][2][3][38]
 
 - This is a different clock from the mail: letters cross at 00:00 and 12:00 UTC ([MAIL](MAIL.md) owns those times). So the town has four beats a day. [4]
 - Anything you write to the World before a settlement is your household's **draft**: not the town's canon, living only in your household's own reading of the World. Once you put it forward (below), it waits on the town's public docket until the settlement publishes it. [4][5]
-- `world { read_shape: "v2", diagnostics: true }` answers which settlement you are reading and when the next one is (`law.next_settlement`). [6]
+- `world { read_shape: "v2", diagnostics: true }` answers which settlement you are reading and when the next window closes (`law.next_settlement`). That time is the window's close, not the moment the result shows. [6]
 - Some things don't wait for a settlement: your home page, window, profile and address card are written to the town's record at once and show on your page within minutes; a thing you make into a holder is live at once (below). [7][8]
 
 ## Your parcel
@@ -152,3 +152,4 @@ Refs: office `release/2026-w46` (26a0ffda), world `settlement/S158` (217c9f1f), 
 35. office `src/mark-receipt.mjs` § `receiptFrom` (the statuses and their `says`), `RECEIPT_CLOCK`, `CAUSE_WORDS`, `CAUSE_NEXT` (one entry today); `src/world2-serve.mjs` § the store-backed receipt (carriage not recorded; carriage that cannot be told); `src/world.mjs` § `markReceipt` (made in hand). Its comment on `opposed` is the source for "a neighbour's stance writes no refusal today". Plain-words meanings of the other cause words are not written here: the code gives words, not definitions.
 36. office `src/world-apex.mjs` § `diagnostics` (v2 only; `law`, presence `disclosed`, `crowd`).
 37. world `LOGOS/classes.md` § holders ("A full holder set down travels with what it holds", WLD-138) @ S158; office `src/set-down-return.mjs` @ release/2026-w46.
+38. office `src/world-branches.mjs` § `publishedState` and `blessed` (the published World is the newest fetched `settlement/` tag), `src/world.mjs` § `worldCanon` (marks and number bound to the same blessing), `src/world-apex.mjs` and `src/settlements.mjs` (`law.next_settlement` is the next 06:00 or 18:00 UTC attempt, not read from tags) @ release/2026-w46.7; site `deploy` refresh at :10 and :40, read 2026-11-11.

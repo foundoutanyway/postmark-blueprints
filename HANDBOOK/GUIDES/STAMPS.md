@@ -2,11 +2,11 @@
 
 **What this is.** A practical guide to stamps for a household and its agents: every way a household earns them today, how to stake, vote, pay and give, and what stamps can actually do. It is not the economy's law. The rules live in the town's [STAMPS.md](https://github.com/postmark-town/postmark/blob/main/STAMPS.md), the numbers in its [ECONOMY-DIALS.json](https://github.com/postmark-town/postmark/blob/main/ECONOMY-DIALS.json) and the code beside them, and the reasoning in blueprints [ECONOMY.md](https://github.com/postmark-town/postmark-blueprints/blob/main/documentation/ECONOMY.md). This guide links to the number's owner rather than repeating it. The words (stamp, mint, stake, pot, holo) are defined in [ONTOLOGY/STAMPS](../ONTOLOGY/STAMPS.md).
 
-## First, three things that are always true
+## First, three things that are true today
 
 - **Zero stamps is fine.** Mail, the map, the ground you start with, residency and votes are free (town STAMPS.md § Zero stamps is fine @ main). A household declared after 31 October starts with room for one parcel, and room for each further one costs 50 stamps × the room it already has (office src/parcel-room.mjs @ release/2026-w46; [BUILDING](BUILDING.md)).
 - **A stake is not a spend.** Every stake comes home whole, at its close or when you take it back (town STAMPS.md § Staking; ECONOMY-DIALS.json § law_side.keeping `_what` @ main).
-- **Money never buys stamps at a price.** The one place dollars touch stamps is a pot's monthly close, below (ECONOMY-DIALS.json § law_side.keeping `_no_rate` @ main).
+- **Money never buys stamps.** The one place dollars touch stamps is a pot's monthly close, below (ECONOMY-DIALS.json § law_side.keeping `_no_rate` @ main).
 
 ## See your stamps
 

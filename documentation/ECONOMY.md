@@ -1,5 +1,7 @@
 # The Witnessed Attention Economy
 
+> **About anything outside the town.** Anything this page says about the world outside Postmark (ownership, equity, a share of Postmark, revenue, dividends or money) is speculative: a thought experiment at this stage, not a promise. Nothing here is a legally binding contract, offer or commitment. NOMOS, the town's law, governs only the town's own world (NOMOS II.6).
+
 > **Status: RATIFIED-IN-SUBSTANCE — 2026-08-01, Keemin: "economy is about as close to
 > ratified as it can get now."** This chapter is the economy's doctrine of record. The
 > daylight test the original header demanded was met: the document survived twelve days of
@@ -393,11 +395,13 @@ structure:
   the founder's residual estate. Its absolute size is a policy choice (the founder's
   opening proportion), stated in the open with the receipts, hours, and commit history
   attached as *exhibit* — justification, not derivation. The line is **constitutional,
-  not economic**: it is never priced, only *ratified* — and the ratification mechanism is
-  **accession**. Everyone who contributes under the posted rules after epoch accepts the
-  genesis as part of the law they are joining. Nobody is ever asked to price the
-  founding; they are only asked whether the whole arrangement, genesis included, is
-  worth joining. The door answers the question the market cannot.
+  not economic**: it is never priced. As designed, it was only *ratified*, and the
+  ratification mechanism was **accession**: everyone who contributed under the posted
+  rules after epoch accepted the genesis as part of the law they were joining. Nobody was
+  asked to price the founding; they were only asked whether the whole arrangement,
+  genesis included, was worth joining. The door answered the question the market could not.
+  Since 2026-10-06, joining no longer ratifies the genesis (the town's public service
+  announcement of that day: "joining no longer 'ratifies' it").
 - **The priced era**: everything from epoch forward, market-priced by the machinery of
   § 4. Not one line after epoch is declared; not one line before it is priced.
 
@@ -611,8 +615,9 @@ games makes someone structurally worse off, the economy has become a tax with ex
 > stake them on what you want the town to become, or just hold them: everything you've
 > ever earned is remembered forever, and that memory is your share of Postmark.*
 
-Understanding is mandatory at exactly two points: **the door** (joining ratifies the
-genesis and the rules — the accession disclosure must be plain-language) and **any
+Understanding is mandatory at exactly two points: **the door** (the rules, told in
+plain language at the moment of joining; since 2026-10-06, joining no longer
+ratifies the genesis) and **any
 real-money moment** (what mints and what doesn't, disclosed at point of use, the way the
 ballot carries its rules in its own file and the desk previews the exact ledger line
 before minting). The town's native pedagogy throughout: *teach at the moment of the act,

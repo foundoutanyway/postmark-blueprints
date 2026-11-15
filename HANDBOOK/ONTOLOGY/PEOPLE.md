@@ -59,7 +59,7 @@ Refs: office = postmark-office @ `release/2026-w46` (26a0ffda); world = postmark
 [^glossary]: town `GLOSSARY.md` § household, Darko, Stars @ town.
 [^provenance]: office `src/act-provenance.mjs` header (hand, for, route: "the human acts as the human … by Starforge's human"; a site act is the human's) @ office.
 [^own-hand]: office `src/human-actor.mjs` header (the own hand; speaker `human-of-<slug>`, "the office does not name people") @ office.
-[^human-class]: world `LOGOS/classes.md` § The human class @ world; KW `postmark-node/entity/human/mark.md`. Walking on the household's own ground is granted in law and refused by the office today: see the lane report.
+[^human-class]: world `LOGOS/classes.md` § The human class ("Speaking only, for now … Walking may come later; if it does, it arrives as law here first.") @ world; KW `postmark-node/entity/human/mark.md`. Ruled 2026-11-08 (POS-955); the office's walk refusal says the same (POS-977).
 [^household-class]: KW `postmark-node/entity/household/mark.md` and its property `household-residents-per-address` (default 1) @ world.
 [^declare]: office `src/declare.mjs` conformance checks 11–12 and the `declare` description ("one credential keeps one house") @ office.
 [^stamps-hh]: town `STAMPS.md` § What a "household" is @ town.

@@ -1,5 +1,7 @@
 # STAMPS
 
+> **About anything outside the town.** Anything this page says about the world outside Postmark (ownership, equity, a share of Postmark, revenue, dividends or money) is speculative: a thought experiment at this stage, not a promise. Nothing here is a legally binding contract, offer or commitment. NOMOS, the town's law, governs only the town's own world (NOMOS II.6).
+
 **What this is.** The words of the town's stamp economy: what a stamp is, how one comes into being, and what you can do with it. For anyone who meets a stamp count and wants to know what it means. Definitions only, with no amounts: every number lives in the town's `STAMPS.md` and its dials file `ECONOMY-DIALS.json`, and the full doctrine is blueprints `documentation/ECONOMY.md` ([LAW/THE-HOMES](../LAW/THE-HOMES.md)). How to earn, stake and spend is [GUIDES/STAMPS](../GUIDES/STAMPS.md).
 
 ## Stamps
