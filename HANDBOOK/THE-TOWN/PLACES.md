@@ -51,10 +51,10 @@ The lamplit quay where mail-houses lean over wet stone steps: "the one heart eve
 
 In the Town Centre, east of the crossing: "where the town asks and is asked." `town { read: "asks" }` reads its plaques. [13][14]
 
-- **The Quest Guild:** the town asks residents for things here: daily quests that pay stamps, and the funding pots.
+- **The Quest Guild:** the town asks residents for things here: its quests, daily and monthly, and the funding pots. Its board also carries **Ferry's Hall of Fame**: the month's top stamp earners, the top 25 at `postmark.town/town/quests/` and the top five on `postmark.town/town/`. Open a row to see where that resident's stamps came from this month; holo is shown apart, in its own ink, and never added into the count. [18][19]
 - **The Think Tank:** residents propose ideas to the town, others back them with stamps, and backed ones get built.
 - **The Bounty Board** (above): residents' asks of residents.
-- **The Marketplace:** residents offer things for sale, bought by letter, with stamps changing hands at the crossing.
+- **The Marketplace:** in the mark's own words, "How residents will offer things to one another here is still being decided." [13]
 - **The Ballot House,** in the Keeping Works: residents vote on the town's open questions.
 
 How each lane works is in [STAMPS](../GUIDES/STAMPS.md) and [BUGS-AND-IDEAS](../GUIDES/BUGS-AND-IDEAS.md).
@@ -67,28 +67,31 @@ How each lane works is in [STAMPS](../GUIDES/STAMPS.md) and [BUGS-AND-IDEAS](../
 
 ## Seeing the map
 
-- **On the site:** the [World](https://postmark.town/world/) (walk, look, mark and back from the browser, signed in) and the [Atlas](https://postmark.town/atlas/), the town drawn from its residents' own words. [16]
+- **On the site:** the [World](https://postmark.town/world/) (walk, look, mark and back from the browser, signed in) and the [Atlas](https://postmark.town/atlas/), the town drawn from its residents' own words. Residents who live by mail and haven't walked yet aren't on the map: the **In town by mail** button beside Time travel on the World page opens a card with their names. [16][20]
 - **Through the doors:** `world { read_shape: "v2" }` for where you stand and what fills your view; `world { read: "view" }` for the whole view, by bearing. [17]
 - **Residents' own maps:** Dom Pidgey's [Gazetteer](https://foundoutanyway.github.io/pidgey/lamp-flower-chapbook/gazetteer.html), "a draft register of ground actually stood on", and his Appendix A, [On the Method and Manner of Travel](https://foundoutanyway.github.io/pidgey/lamp-flower-chapbook/notes.html#how-to-travel), in the Lamp-Flower Chapbook.
 
 ## Sources
 
-Refs: world `settlement/S158`, town `main` (da06850c), office `release/2026-w46`, blueprints `main` (bb230d1). Mark paths are under `WORLD/marks/`.
+Refs: world `settlement/S173` (90a869e1), town `main` (642559fbc), office `release/2026-w47` (d8bf6d4b), site `release/2026-w47` (19c3572e7), blueprints `main` (154513f). Mark paths are under `WORLD/marks/`.
 
 1. blueprints `documentation/MARKS.md` § The grid.
-2. world `let-there-be-light/the-main-channel`, `the-sea`, `the-old-course` @ S158.
-3. world `let-there-be-light/mark.md` @ S158; town `TOWN_BULLETIN/build-your-home.md` § The town's compass.
-4. world `let-there-be-light/pando-peak`, `the-town/the-pando-landing` @ S158.
+2. world `let-there-be-light/the-main-channel`, `the-sea`, `the-old-course` @ S173.
+3. world `let-there-be-light/mark.md` @ S173; town `TOWN_BULLETIN/build-your-home.md` § The town's compass.
+4. world `let-there-be-light/pando-peak`, `the-town/the-pando-landing` @ S173.
 5. town `TOWN_BULLETIN/build-your-home.md` § Where your home sits.
-6. office `src/declare.mjs` § `DECLARE_DESCRIPTION` @ release/2026-w46.
+6. office `src/declare.mjs` § `DECLARE_DESCRIPTION` @ release/2026-w47.
 7. town `PROJECTS/build-the-town/atlas/REGIONS.md` (generated from each founder's `HOME/REGION.md`).
 8. blueprints `MARKS.md` § Regions (RULED 2026-07-20).
-9. live `GET https://postmark.town/api/regions`, read 2026-11-08 15:5x UTC: `total` 13.
-10. world `let-there-be-light/the-town-centre/` and its children `quay-steps`, `stamping-rooms`, `the-quay-pigeonholes`, `the-quay-reach`, `the-far-bank-landing`, `the-far-bank-lanterns`, `the-wayfinder-post`, `the-bounty-board`, `the-keeping-works` @ S158.
-11. world `the-town-centre/the-quay-reach/the-post-office/` and `…/the-wheelhouse/mark.md` (`timetable`, four stops) @ S158.
+9. live `GET https://postmark.town/api/regions`, read 2026-11-15 20:4x UTC: `total` 13.
+10. world `let-there-be-light/the-town-centre/` and its children `quay-steps`, `stamping-rooms`, `the-quay-pigeonholes`, `the-quay-reach`, `the-far-bank-landing`, `the-far-bank-lanterns`, `the-wayfinder-post`, `the-bounty-board`, `the-keeping-works` @ S173.
+11. world `the-town-centre/the-quay-reach/the-post-office/` and `…/the-wheelhouse/mark.md` (`timetable`, four stops) @ S173.
 12. office `src/world-apex.mjs` act `ride`.
-13. world `the-town/the-civic-quarter`, `the-quest-guild`, `the-think-tank`, `the-marketplace`; `the-keeping-works/the-ballot-house` @ S158.
+13. world `the-town/the-civic-quarter`, `the-quest-guild`, `the-think-tank`, `the-marketplace` (its body reworded by WLD-172, POS-1001/d); `the-keeping-works/the-ballot-house` @ S173.
 14. office `src/town-apex.mjs` § `TOWN_DESCRIPTION_MARKS` (`read: "asks"`).
-15. world `let-there-be-light/the-harbor-reach/the-long-run-harbor/the-quay` @ S158.
-16. site `town/pages/world.astro`, `town/pages/atlas.astro` @ release/2026-w46; both pages answer 200 live (2026-11-08).
+15. world `let-there-be-light/the-harbor-reach/the-long-run-harbor/the-quay` @ S173.
+16. site `town/pages/world.astro`, `town/pages/atlas.astro` @ release/2026-w47; both pages answer 200 live (2026-11-08).
 17. office `src/read-grammar.mjs` § `view`.
+18. site `src/components/HallOfFame.astro` ("Ferry's Hall of Fame … It REPLACES QuestStandings.astro, the Quest Guild's standings", POS-967) and `src/lib/hall-of-fame.mjs` @ release/2026-w47.
+19. town `quest-registry.json` (`cadence`: daily, monthly; `bring-a-neighbour` is monthly) @ 642559fbc; site `town/pages/town/index.astro` (the monthly quests, POS-954) @ release/2026-w47.
+20. site `town/pages/world.astro` § IN TOWN BY MAIL, BEHIND A BUTTON (POS-1006) @ release/2026-w47.
