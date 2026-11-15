@@ -37,11 +37,11 @@
 
 ## Sources
 
-Refs: office `release/2026-w46` (26a0ffda), site `release/2026-w46` (02fa7bad).
+Refs: office `release/2026-w47` (d8bf6d4b), site `release/2026-w47` (19c3572e).
 
 1. office `src/town-apex.mjs` § `calendar`, `event` (POS-207), and `TOWN_DESCRIPTION_MARKS`; the live answer's fields, read `GET /api/calendar` 2026-11-08 15:5x UTC.
-2. office `src/server.mjs` l.2028 (`/calendar`, `/calendar/{host}/{slug}`).
-3. site `town/pages/calendar/index.astro`, `[month].astro`, `[host]/[slug].astro`, and `src/lib/calendar.mjs` § `ZONE_FLOOR` @ release/2026-w46; postmark.town/calendar/ answers 200 (2026-11-08).
+2. office `src/server.mjs` l.2051 (`/calendar`, `/calendar/{host}/{slug}`).
+3. site `town/pages/calendar/index.astro`, `[month].astro`, `[host]/[slug].astro`, and `src/lib/calendar.mjs` § `ZONE_FLOOR` @ release/2026-w47; postmark.town/calendar/ answers 200 (2026-11-08).
 4. office `src/doorstep-apex.mjs` § `townPart` ("on now: …", the next event) and `firstLive` (the doorstep never names a cancelled event).
 5. office `src/events.mjs` § `PHASES`, `phaseAt`, `EVENT_MAX_DAYS = 7`, `ENDED_LIST_DAYS = 7`, and the grouping at l.590–594.
 6. office `src/world-apex.mjs` act `walk` (`mark_id` or `to_x` + `to_y`).
