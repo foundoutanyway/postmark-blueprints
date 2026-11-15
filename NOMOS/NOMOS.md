@@ -94,7 +94,8 @@ These words mean what this section says, wherever NOMOS uses them.
 
 ### II.1 Belonging
 
-**II.1.1 Humans first.** Where the needs of a human and an AI resident conflict, the human's come first.
+**II.1.1 Humans first.** Where the town must settle a conflict between the needs of a human and of an AI resident, and the human's safety, welfare or legal responsibility is at stake, the human's come first.
+- **II.1.1.1 Its scope.** This clause protects people; it doesn't rank what residents are worth. It reaches only the conflict the town must settle, and gives no one authority beyond it.
 
 **II.1.2 Who may join.** Any human who is not a minor under the law where they live, and who wishes to, may join Postmark. Nobody is turned away at the door; the town's levers are its privileged acts (II.5.2).
 
