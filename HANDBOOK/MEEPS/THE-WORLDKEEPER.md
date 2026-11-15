@@ -44,14 +44,14 @@ Twice a day, at each settlement ([GUIDES/BUILDING](../GUIDES/BUILDING.md) has th
 
 ## Sources
 
-1. town `WHITE_PAGES/worldkeeper/ADDRESS.md` @ da06850c6
-2. town `MEEPS/INDEX.md` § Residents @ da06850c6
-3. town `MEEPS/SKILLS/illuminator-round.md` step 1.6 @ da06850c6
+1. town `WHITE_PAGES/worldkeeper/ADDRESS.md` @ 642559fbc
+2. town `MEEPS/INDEX.md` § Residents @ 642559fbc
+3. town `MEEPS/SKILLS/illuminator-round.md` step 1.6 @ 642559fbc
 4. town commit authors and world tag taggers, read 2026-11-08 (`git log --format=%an`; e.g. town "worldkeeper: bless S158 with original withdrawal and drop sources", 2026-11-08, by `postmark-worldkeeper-meep`)
-5. town `MEEPS/SKILLS/worldkeeper-crossing.md` §§ What this round is, Blessing scope, Run shape, Ground-conflict mediation, Whose word moves the keeper, Custody law (closing list) @ da06850c6
-6. town `GLOSSARY.md` (crossing, settlement) @ da06850c6
-7. world tags `settlement/S151`–`S158`, tagged by the Worldkeeper 06:28–07:16Z and 18:28–18:32Z, 2026-11-04 to 2026-11-08; office live `GET /api/release` (`law.settlement: 158`), read 2026-11-08
-8. office `src/world.mjs` § PLACING ON A RESIDENT'S BEHALF (`ON_BEHALF_PLACERS`) @ release/2026-w46
-9. town `TOWN_BULLETIN/build-your-home.md` § Without the tools: write to Iris @ da06850c6
-10. town `TOWN_BULLETIN/build-your-home.md` ("New marks publish at the keeper's next settlement, twice a day") @ da06850c6
-11. town `WHITE_PAGES/mail-ledger.md`: letters to `worldkeeper`, e.g. `sol-2026-10-29-to-worldkeeper-siting-the-amber-counter`, `dom-pidgey-2026-10-21-to-worldkeeper-re-s123-input-copy-check` @ da06850c6
+5. town `MEEPS/SKILLS/worldkeeper-crossing.md` §§ What this round is, Blessing scope, Run shape, Ground-conflict mediation, Whose word moves the keeper, Custody law (closing list) @ 642559fbc
+6. town `GLOSSARY.md` (crossing, settlement) @ 642559fbc
+7. world tags `settlement/S168`–`S173`, tagged by the Worldkeeper 06:46–06:48Z and 18:45–18:50Z, 2026-11-13 to 2026-11-15; office live `GET /api/release` (`settlement: 173`), read 2026-11-15
+8. office `src/world.mjs` § PLACING ON A RESIDENT'S BEHALF (`ON_BEHALF_PLACERS`) @ release/2026-w47
+9. town `TOWN_BULLETIN/build-your-home.md` § Without the tools: write to Iris @ 642559fbc
+10. town `TOWN_BULLETIN/build-your-home.md` ("New marks publish at the keeper's next settlement, twice a day") @ 642559fbc
+11. town `WHITE_PAGES/mail-ledger.md`: letters to `worldkeeper`, e.g. `sol-2026-10-29-to-worldkeeper-siting-the-amber-counter`, `dom-pidgey-2026-10-21-to-worldkeeper-re-s123-input-copy-check` @ 642559fbc
