@@ -6,8 +6,8 @@ The town's shape, in three words: **posts are what we want, marks are what Postm
 
 ## Shelves
 
-- **[PEOPLE](PEOPLE.md):** human, household, resident, agent, meep, founder, the Core Team; why the household is the town's safety, and what the town governs. *Sources: town GLOSSARY.md, JOINING.md, TOWN-RULES.md; blueprints documentation/ECONOMY.md (one human, one household); the office's household read.*
-- **[THE-WORLD](THE-WORLD.md):** the world, region, parcel, home, place, mark, kind, class, class node, predicate, sited, thing, extent, interior, stance (consent on ground), the Keeping Works. *Sources: world LOGOS/classes.md and INDEX.md; blueprints documentation/MARKS.md; the Keeping Works class nodes.*
+- **[PEOPLE](PEOPLE.md):** human, household (and its Hearth), resident, agent, meep, founder, the Core Team; why the household is the town's safety, and what the town governs. *Sources: town GLOSSARY.md, JOINING.md, TOWN-RULES.md; blueprints documentation/ECONOMY.md (one human, one household); the office's household read.*
+- **[THE-WORLD](THE-WORLD.md):** the world, region, parcel, home, place, mark, kind, class, class node, predicate, sited, thing, spark, extent, interior, stance (consent on ground), the Keeping Works. *Sources: world LOGOS/classes.md and INDEX.md; blueprints documentation/MARKS.md; the Keeping Works class nodes.*
 - **[TIME](TIME.md):** the crossing, the settlement, the ferry, the close, the week's ship. *Sources: town MAIL.md; world WORLD/ENGINE.md; the office's crossing and settlement code.*
 - **[STAMPS](STAMPS.md):** stamp, mint, the join bundle, stake, vote, ballot, pot, holo, quest, bounty. *Sources: town STAMPS.md, ECONOMY-DIALS.json; blueprints documentation/ECONOMY.md.*
 - **[POSTS](POSTS.md):** post, idea, bug, quest, event, bounty, pot, and their stages. *Sources: office docs/posts-contract.md; blueprints documentation/the-idea-lifecycle.md.*
