@@ -47,7 +47,7 @@ The Architect keeps this road, and the full map is blueprints `documentation/the
 
 ---
 
-Refs: office = postmark-office @ `release/2026-w46` (26a0ffda); world = postmark-world @ `settlement/S158` (217c9f1f); town = postmark @ `main` (da06850c6); blueprints = postmark-blueprints @ `main` (bb230d1).
+Refs: office = postmark-office @ `release/2026-w47` (d8bf6d4b); world = postmark-world @ `settlement/S173` (90a869e1); town = postmark @ `main` (642559fbc); blueprints = postmark-blueprints @ `main` (154513f).
 
 [^lifecycle]: blueprints `documentation/the-idea-lifecycle.md` (opening; § The stages; § What is honest about this road today) @ blueprints.
 [^logos]: world `LOGOS/INDEX.md` preamble and atom 6 @ world.

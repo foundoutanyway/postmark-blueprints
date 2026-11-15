@@ -34,13 +34,13 @@ The sited half is a district in the Town Centre: the machinery as buildings, roo
 
 The **Works portal** joins the two halves: "enter it and the read roots at the-town/postmark-node — the town's own law; your feet stay on the town's ground." [13]
 
-## What's there (counted at settlement S158)
+## What's there (counted at settlement S173)
 
 | | Count |
 |---|---:|
-| `mark.md` files in the Works | **629** |
-| class nodes | 289 |
-| property nodes | 214 |
+| `mark.md` files in the Works | **646** |
+| class nodes | 290 |
+| property nodes | 230 |
 | predicate nodes (82) and older `predicated` (1) | 83 |
 | sited marks (the buildings and their rooms) | 43 |
 | direct branches: sited buildings / class roots / portal | 37 / 7 / 1 |
@@ -49,7 +49,7 @@ The class space has seven roots. Their directory nesting is class ancestry, not 
 
 | Root | Files | What it holds |
 |---|---:|---|
-| `postmark-node` | 320 | the world's node, what happens: mark, entity, emission, paper and predicate, and their classes |
+| `postmark-node` | 337 | the world's node, what happens: mark, entity, emission, paper and predicate, and their classes |
 | `postmark-edge` | 72 | the relations you can declare, and the residues acts leave |
 | `postmark-rules` | 54 | the stipulations |
 | `postmark-invariant` | 33 | the standing questions asked of the town |
@@ -61,7 +61,7 @@ The ground half holds the other 126 files (43 sited, 82 predicates, 1 `predicate
 
 ## Sources
 
-Refs: world `settlement/S158` (217c9f1f), office `release/2026-w46` (26a0ffda), blueprints `main` (bb230d1). The Works is `WORLD/marks/let-there-be-light/the-town-centre/the-keeping-works/` (below, `KW/`).
+Refs: world `settlement/S173` (90a869e1), office `release/2026-w47` (d8bf6d4b), blueprints `main` (154513f). The Works is `WORLD/marks/let-there-be-light/the-town-centre/the-keeping-works/` (below, `KW/`).
 
 1. world `KW/mark.md`: "The quarter where the town's own machinery stands as buildings, each one citing the code that keeps it true."
 2. world `KW/postmark-node/mark/mark.md` (class `mark`, extends `postmark-node`).
@@ -72,8 +72,8 @@ Refs: world `settlement/S158` (217c9f1f), office `release/2026-w46` (26a0ffda), 
 7. office `src/world-apex.mjs` § `explainClassOr` (a read-grammar path answers first, then the class layer, then `nearest_classes`).
 8. office `src/mcp.mjs` § the tutorial ("explain: "<class>" what a thing IS, up its class chain").
 9. office `src/world-store.mjs` § `CLASS_ROSTER_GATE_SQL` (`by = 'the-town'`, `tier = 'constitution'`, a `class`, inside the Works).
-10. office `src/world-apex.mjs` § `APEX_DESCRIPTION` ("GET /world/dials lists them by mark id"); live read 2026-11-08 15:4x UTC answers `settlement: "S158"`.
-11. world `KW/the-sorting-house`, `KW/the-mint-house`, `KW/the-front-window`, `KW/the-ballot-house` @ S158.
+10. office `src/world-apex.mjs` § `APEX_DESCRIPTION` ("GET /world/dials lists them by mark id"); live read 2026-11-15 20:4x UTC answers `settlement: "S173"`.
+11. world `KW/the-sorting-house`, `KW/the-mint-house`, `KW/the-front-window`, `KW/the-ballot-house` @ S173.
 12. world `docs/the-keeping-works.md` § The ground view (its census is stale; see the lane report).
 13. world `KW/the-works-portal/mark.md` (`slot: portal`, `value: the-town/postmark-node`).
-14. Counted at `settlement/S158`: every `mark.md` under `KW/`, by its `kind:` field and by root.
+14. Counted at `settlement/S173`: every `mark.md` under `KW/`, by its `kind:` field and by root.

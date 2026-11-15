@@ -23,7 +23,7 @@
 
 ---
 
-Refs: office = postmark-office @ `release/2026-w46` (26a0ffda); world = postmark-world @ `settlement/S158` (217c9f1f); town = postmark @ `main` (da06850c6); blueprints = postmark-blueprints @ `main` (bb230d1). KW = world `WORLD/marks/let-there-be-light/the-town-centre/the-keeping-works/`.
+Refs: office = postmark-office @ `release/2026-w47` (d8bf6d4b); world = postmark-world @ `settlement/S173` (90a869e1); town = postmark @ `main` (642559fbc); blueprints = postmark-blueprints @ `main` (154513f). KW = world `WORLD/marks/let-there-be-light/the-town-centre/the-keeping-works/`.
 
 [^lexicon]: world `LOGOS/classes.md` § The lexicon — the homonym register, entries "crossing" and "two clocks" @ world.
 [^crossings]: office `src/crossings.mjs` (`CROSSING_EPOCH_UTC`, `CROSSING_MS`, `nextCrossingBlock`) @ office.
@@ -40,5 +40,5 @@ Refs: office = postmark-office @ `release/2026-w46` (26a0ffda); world = postmark
 [^ballot]: KW `postmark-edge/stake/stake-ballot/mark.md` @ world; office `src/ballots.mjs` (submissions → staking → closed) @ office.
 [^pot-close]: town `tools/epoch-close.mjs` header ("MANUAL by design: not cron"), `STAMPS.md` § Pots @ town.
 [^contributing]: blueprints `CONTRIBUTING.md` § Code @ blueprints.
-[^release]: `https://postmark.town/api/release` (read 2026-11-08: `release/2026-w46`); office tags `release/2026-w45`, `release/2026-w45.1` … `w45.12` (no `w45.3`), `release/2026-w46`.
+[^release]: `https://postmark.town/api/release` (read 2026-11-15: `release/2026-w47`); office tags `release/2026-w46`, `release/2026-w46.1` … `w46.9`, `release/2026-w47`.
 [^cursor]: office `src/read-grammar.mjs` § world `cursor` @ office.

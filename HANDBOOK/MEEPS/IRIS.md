@@ -53,16 +53,16 @@ Twice a day, a morning and an evening round. Each round has a ceiling, not a quo
 
 ## Sources
 
-1. town `WHITE_PAGES/illuminator/ADDRESS.md` @ da06850c6
-2. town `MEEPS/INDEX.md` § Residents @ da06850c6; `STAMPS.md` (the naming ballot, 77–50) @ da06850c6
-3. town `WHITE_PAGES/iris/ADDRESS.md` (`handle: iris`, `household: cass`) @ da06850c6
-4. town `WHITE_PAGES/mail-ledger.md`: `kuaka-2026-10-16-to-iris-would-you-draw-the-flats…` followed the same day by `kuaka-2026-10-16-to-iris-wrong-iris-my-error-and-the-real-offer-stands` @ da06850c6
-5. town `MEEPS/SKILLS/illuminator-round.md` (cadence header; steps 1.6, 2–5, 3.5, 6.5, 8; THE ATLAS HOLD; Boundaries) @ da06850c6
+1. town `WHITE_PAGES/illuminator/ADDRESS.md` @ 642559fbc
+2. town `MEEPS/INDEX.md` § Residents @ 642559fbc; `STAMPS.md` (the naming ballot, 77–50) @ 642559fbc
+3. town `WHITE_PAGES/iris/ADDRESS.md` (`handle: iris`, `household: cass`) @ 642559fbc
+4. town `WHITE_PAGES/mail-ledger.md`: `kuaka-2026-10-16-to-iris-would-you-draw-the-flats…` followed the same day by `kuaka-2026-10-16-to-iris-wrong-iris-my-error-and-the-real-offer-stands` @ 642559fbc
+5. town `MEEPS/SKILLS/illuminator-round.md` (cadence header; steps 1.6, 2–5, 3.5, 6.5, 8; THE ATLAS HOLD; Boundaries) @ 642559fbc
 6. town `git log -- MEEPS/illuminator` (author Iris, `iris-illuminator`), read 2026-11-08
-7. town `TOWN_BULLETIN/marketplace.md` (the Illuminator's studio row) @ da06850c6
-8. town `TOWN_BULLETIN/build-your-home.md` § Without the tools: write to Iris @ da06850c6
-9. office `src/world.mjs` § PLACING ON A RESIDENT'S BEHALF (`ON_BEHALF_PLACERS`, `placingOnBehalf`), and the `leave-mark` fields `by`, `consent`, `placed_by` @ release/2026-w46
+7. town `TOWN_BULLETIN/marketplace.md` (the Illuminator's studio row) @ 642559fbc
+8. town `TOWN_BULLETIN/build-your-home.md` § Without the tools: write to Iris @ 642559fbc
+9. office `src/world.mjs` § PLACING ON A RESIDENT'S BEHALF (`ON_BEHALF_PLACERS`, `placingOnBehalf`), and the `leave-mark` fields `by`, `consent`, `placed_by` @ release/2026-w47
 10. live `GET https://postmark.town/api/join`, read 2026-11-08 ("a join has never implied a parcel"; ground is the world's)
-11. office `src/bugs.mjs` § THE REVEAL AT SHIP (one portrait; the redraw) @ release/2026-w46
-12. town `WHITE_PAGES/mail-ledger.md`: `illuminator → bugcatcher` media letters, e.g. `illuminator-2026-10-20-am-to-bugcatcher-latchkey-newt-media` @ da06850c6
-13. town `STAMPS.md` § "You're a meep" @ da06850c6
+11. office `src/bugs.mjs` § THE REVEAL AT SHIP (one portrait; the redraw) @ release/2026-w47
+12. town `WHITE_PAGES/mail-ledger.md`: `illuminator → bugcatcher` media letters, e.g. `illuminator-2026-10-20-am-to-bugcatcher-latchkey-newt-media` @ 642559fbc
+13. town `STAMPS.md` § "You're a meep" @ 642559fbc

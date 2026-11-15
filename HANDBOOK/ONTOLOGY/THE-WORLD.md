@@ -16,13 +16,14 @@
 - **extent:** how much ground a sited mark covers, which its maker gives.[^extent]
 - **predicate:** a claim about another mark, standing under it and taking its place from it (a name, a description). Anyone may make one, and it can be contested.[^predicate] A **naming** is a predicate whose claim is a name.[^naming] Class: `predicate`.
 - **thing:** a made object: who made it, who holds it and where it stands are three different answers. A thing can be carried, given, taken, set down or, if it's a consumable, used up.[^thing] Class: `thing`.
+- **spark:** a mark that remembers a moment a household lived: when it happened, where, and the recounting, headlined by its body. An event, a circle of talk, the households who were there or a picture are optional ties. Its time is the moment's, and its place is the moment's too, neither sited nor anchored, so it claims no ground and contests no mark. The World knows the class; no door makes a spark yet.[^spark] Class: `spark`.
 - **class:** what a thing *is*, as law: its sentence, what it extends, its properties and the acts it grants. "Definitions are ruled, instances are free": anything that binds only you, you may make; anything that binds others enters by the [Idea Lifecycle](../LAW/HOW-LAW-CHANGES.md).[^lifecycle]
 - **class node:** a class's own mark in the Keeping Works (`kind: class`), citing `LOGOS/classes.md` as its source. Every instance read names its class, so `explain: "<class>"` reaches it.[^class-node][^tutorial]
 - **property:** an attribute a class declares (its name, tier and default), filled on each instance as a plain field. The class side, where a predicate is the instance side.[^lexicon]
 - **kind:** a mark's own class, its "class ID" (a thing you can use up has the kind `consumable`, say, which is a kind of `thing`); "a kind of X" means a subclass of X. A plain mark's kind is just how it stands: `sited`, `parcel`, `predicate` or `naming`.[^lexicon][^schema] Say "kind", never "type".
 - **tier** (of a mark): whose claim it is: **constitution** (the town's, locked), **sovereign** (on a household's own ground), **market** (contestable common ground) or **draft** (not yet admitted).[^tiers] Not the same as your standing at a door ([PEOPLE](PEOPLE.md)).
 - **canon:** what the world holds as true after a settlement publishes it. The set of everyone's claims is the market; canon is what the fold publishes at the settlement.[^logos]
-- **stance:** a holder's revisable word on a mark that stands on their ground: welcomed, opposed or a declared neutral, latest wins; silence leaves it awaiting. A thing moved onto new ground makes a new edge, awaiting the new holder.[^stance][^marks-stance] Act: `household { do: "declare-stance-on" }`; what waits on your word: `household { read: "needs-you" }`.
+- **stance:** a holder's revisable word on a mark that stands on their ground: welcomed, opposed or a declared neutral, latest wins; silence leaves it awaiting. A thing moved onto new ground makes a new edge, awaiting the new holder. Who was there first is read cell by cell: whoever first covered a stretch of ground holds it against a later mark, and a mark that grows is a newcomer only on its new ground.[^stance][^marks-stance][^first-laid] Act: `household { do: "declare-stance-on" }`; what waits on your word: `household { read: "needs-you" }`.
 
 ## Ground and homes
 
@@ -44,7 +45,7 @@
 
 ---
 
-Refs: office = postmark-office @ `release/2026-w46` (26a0ffda); world = postmark-world @ `settlement/S158` (217c9f1f); town = postmark @ `main` (da06850c6); blueprints = postmark-blueprints @ `main` (bb230d1). KW = world `WORLD/marks/let-there-be-light/the-town-centre/the-keeping-works/`.
+Refs: office = postmark-office @ `release/2026-w47` (d8bf6d4b); world = postmark-world @ `settlement/S173` (90a869e1); town = postmark @ `main` (642559fbc); blueprints = postmark-blueprints @ `main` (154513f). KW = world `WORLD/marks/let-there-be-light/the-town-centre/the-keeping-works/`.
 
 [^glossary]: town `GLOSSARY.md` § the World, white pages @ town.
 [^logos]: world `LOGOS/INDEX.md` § The atomic laws (1, 6, 15) and preamble @ world.
@@ -64,6 +65,8 @@ Refs: office = postmark-office @ `release/2026-w46` (26a0ffda); world = postmark
 [^tiers]: world `LOGOS/tiers.md` (the tier table) @ world.
 [^stance]: KW `postmark-edge/declare-stance-on/mark.md` @ world.
 [^marks-stance]: blueprints `documentation/MARKS.md` § Stances (Darko 2026-10-28) @ blueprints.
+[^first-laid]: world `WORLD/marks/SCHEMA.md` § First-laid facts (`claimed_at`, `footprints`: "seniority at contact is read cell by cell … an expansion is a newcomer on its new cells", POS-571), `tools/consent.mjs` § `seniorAtContact` @ world.
+[^spark]: world `LOGOS/classes.md` § The spark (CORE-70, ruled 2026-11-13 and 11-14; WLD-173) and KW `postmark-node/mark/spark/mark.md` @ world. Making sparks is office work not yet shipped (POS-1035).
 [^parcel]: KW `postmark-node/mark/parcel/` (`one-per-resident`, `claim-cap`, `household-scope`, `parcel-extent-m`) @ world; blueprints `documentation/MARKS.md` § Parcels @ blueprints.
 [^parcel-room]: world `LOGOS/classes.md` § Parcels from 11-01 @ world; office `src/parcel-room.mjs` header and `src/household-apex.mjs` § ACTS `buy-parcel-room` @ office.
 [^regions]: blueprints `documentation/MARKS.md` § Regions (founding closed, 2026-08-24) @ blueprints.
