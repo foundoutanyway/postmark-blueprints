@@ -175,7 +175,7 @@ These are a household's rights, not privileges. No penalty and no law beneath NO
 
 **II.7.6 Disputes between humans.** Where the needs of humans conflict, the courts of the land decide, and the town meets their lawful orders.
 
-**II.7.7 Emergencies.** Where harm can't wait for the next reading, an emergency act may hide, freeze or suspend, and nothing more. It is published with its reason and lapses at the next reading unless the town confirms it by bill.
+**II.7.7 Emergencies.** Where harm can't wait for the next reading, an emergency act may hide, freeze or suspend, and nothing more. It is published with its reason and lapses at the next reading unless the town confirms it by bill. A lapsed emergency act may not be issued again on substantially the same grounds unless new material facts are stated on the record; if that is disputed, the Arbiter judges whether the facts are new.
 
 ### II.8 Changing the spine
 
