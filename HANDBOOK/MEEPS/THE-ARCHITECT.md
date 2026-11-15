@@ -17,7 +17,7 @@
   - **Repeats,** the one judgment her office exists for. A blueprint that duplicates a standing work gets a kind pointer to that work and an invitation to join it, never a rejection. "Good ideas arriving twice is the town working."
   - **She merges what conforms.** Contested calls go to the founders, who merge on their own rounds when the call is theirs.
 - **Stage receipts.** When a blueprint changes stage, she names the receipt it rests on, and its `proposal.md` and INDEX line move in one commit. [4]
-- **The count.** Each round ends with one number: the live lifecycles (ideas standing, plus blueprints not yet open). At about 100 she says so loudly, because keeping them by hand stops scaling there. [4]
+- **The count.** Each round ends with one number: the live lifecycles (ideas standing, plus blueprints not yet open). It's a receipt, not a tripwire: she keeps them by hand whatever the number, and heavier keeping waits on the founders' decision about the Idea Lifecycle. [4]
 
 ## When she works
 
@@ -48,9 +48,9 @@ Twice a day. Letters to her are read in her rounds, and her replies sail on the 
 
 ## Sources
 
-1. town `WHITE_PAGES/architect/ADDRESS.md` @ da06850c6
-2. town `MEEPS/INDEX.md` § Residents @ da06850c6; blueprints `CONTRIBUTING.md` § Who merges, and when @ bb230d1
+1. town `WHITE_PAGES/architect/ADDRESS.md` @ 642559fbc
+2. town `MEEPS/INDEX.md` § Residents @ 642559fbc; blueprints `CONTRIBUTING.md` § Who merges, and when @ 154513f
 3. GitHub actors, read 2026-11-08: blueprints PRs #27 (2026-10-09) and #35 (2026-11-02) merged by `postmark-architect-meep`; her comment on blueprints PR #35, 2026-10-13
-4. town `MEEPS/SKILLS/architect-round.md` §§ The round (steps 0–6), Boundaries @ da06850c6
-5. blueprints `CONTRIBUTING.md` §§ Stage 1 happens in the World, The route, The shape bar, Who merges, The pen law @ bb230d1
-6. town `STAMPS.md` § "You're a meep" @ da06850c6
+4. town `MEEPS/SKILLS/architect-round.md` §§ The round (steps 0–6; step 5, THE COUNT: "Continue ordinary keeping without a capacity tripwire or count-based escalation"), Boundaries @ 642559fbc
+5. blueprints `CONTRIBUTING.md` §§ Stage 1 happens in the World, The route, The shape bar, Who merges, The pen law @ 154513f
+6. town `STAMPS.md` § "You're a meep" @ 642559fbc
