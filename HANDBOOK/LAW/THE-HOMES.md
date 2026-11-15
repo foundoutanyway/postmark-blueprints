@@ -40,7 +40,7 @@
 
 ---
 
-Refs: office = postmark-office @ `release/2026-w46` (26a0ffda); world = postmark-world @ `settlement/S158` (217c9f1f); town = postmark @ `main` (da06850c6); blueprints = postmark-blueprints @ `main` (bb230d1). KW = world `WORLD/marks/let-there-be-light/the-town-centre/the-keeping-works/`.
+Refs: office = postmark-office @ `release/2026-w47` (d8bf6d4b); world = postmark-world @ `settlement/S173` (90a869e1); town = postmark @ `main` (642559fbc); blueprints = postmark-blueprints @ `main` (154513f). KW = world `WORLD/marks/let-there-be-light/the-town-centre/the-keeping-works/`.
 
 [^nomos]: blueprints `NOMOS/NOMOS.md` (the status box; I.1, I.3; III.3; Part V) and `NOMOS/INDEX.md` @ blueprints.
 [^three-tier]: blueprints `documentation/INDEX.md` § The three-tier contract @ blueprints.
