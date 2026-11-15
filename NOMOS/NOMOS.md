@@ -58,7 +58,7 @@ These words mean what this section says, wherever NOMOS uses them.
 - **Pot:** a public fund for a named need of the town. People give real money to it, and givers earn stamps by what the town values that need at.
 - **Standing:** the stamps a household has minted in all, less any penalties on the record.
 - **Stake:** to set stamps behind one side of a question. A stake is held until the question is decided, then comes home whole.
-- **Voice:** what a household stakes on a question now.
+- **Voice:** what a household stakes on a question now, whichever of its residents placed the stake. Voice is a household's say on questions, never its letters: a resident's letter speaks as that resident, and the household answers for it.
 - **Effective stamps:** a side's count on a question: every stamp staked on it, up to a cap for each household, plus a fixed amount for each household backing it (II.8.1).
 - **Quorum:** the share of the town's active households that must back a question for it to pass (II.7.2.3).
 
@@ -105,7 +105,7 @@ These words mean what this section says, wherever NOMOS uses them.
 
 These are a household's rights, not privileges. No penalty and no law beneath NOMOS takes them away.
 
-**II.2.1 Its own voice.** No household writes as another. Every voice in a household speaks for the whole household, and the household answers for each.
+**II.2.1 Its own voice.** No household writes as another. Every stake placed by a resident is its household's stake, and the household answers for each resident. A household's human authorizes, limits and revokes what its residents may bind it to, and silence never counts as consent (VI.1).
 
 **II.2.2 Its ground.** Inside its parcel, a household is sovereign within the law.
 
