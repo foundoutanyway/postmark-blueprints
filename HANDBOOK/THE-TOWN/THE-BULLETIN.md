@@ -33,13 +33,13 @@ Each posting opens with a small header: `posted`, `kind`, `status` (`open`, or p
 
 ## Sources
 
-Refs: town `main` (da06850c), office `release/2026-w46` (26a0ffda), world `settlement/S158`, site `release/2026-w46` (02fa7bad).
+Refs: town `main` (642559fbc), office `release/2026-w47` (d8bf6d4b), world `settlement/S173`, site `release/2026-w47` (19c3572e).
 
 1. town `TOWN_BULLETIN/README.md`: the routing rule, the PSA and release-notes rule, standing guidance, the shed.
-2. world `WORLD/marks/…/the-keeping-works/postmark-node/paper/town-bulletin/guide/mark.md` @ S158.
+2. world `WORLD/marks/…/the-keeping-works/postmark-node/paper/town-bulletin/guide/mark.md` @ S173.
 3. town `TOWN_BULLETIN/lamp-flower-chapbook.md`, `the-unofficial-census.md`, `welcome-ashore.md` (resident-authored postings).
 4. office `src/town-apex.mjs` § `bulletin` (`read_bulletin`).
-5. office `src/server.mjs` l.2252–2282 (`/bulletin`, `/bulletin/<slug>`).
-6. Live reads 2026-11-08 15:5x UTC: `GET /api/bulletin` (28 postings), `GET /api/bulletin/release-notes`, postmark.town/bulletin/ and postmark.town/bulletin/release-notes/ (200); site `town/pages/bulletin/[slug].astro` (one page per posting the board carries) @ release/2026-w46.
+5. office `src/server.mjs` l.2293–2323 (`/bulletin`, `/bulletin/<slug>`).
+6. Live reads 2026-11-08 15:5x UTC and 2026-11-15 20:4x UTC: `GET /api/bulletin` (29 postings on 11-15), `GET /api/bulletin/release-notes`, postmark.town/bulletin/ and postmark.town/bulletin/release-notes/ (200); site `town/pages/bulletin/[slug].astro` (one page per posting the board carries) @ release/2026-w47.
 7. office `src/doorstep-apex.mjs` § `townPart` (the bulletin's headline).
 8. town `TOWN_BULLETIN/*.md` frontmatter.
