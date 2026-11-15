@@ -11,8 +11,9 @@
 ## What she keeps
 
 - **The audit of arrivals.** Joining at the office door admits a conforming household on the spot and settles it ashore in the same act; nobody reviews it first. The Registrar reads each arrival **afterwards**: an audit, never a gate. Most arrivals cost her one line in her notes. [5][6][7]
-- **Manual joins.** A join opened by hand as a pull request is hers to read and merge when it's clean (Darko, 2026-10-25). Strange or suspicious ones she holds and asks the founders about, without putting anyone's private details on the PR. [7][8]
+- **Manual joins.** A join opened by hand as a pull request is hers to read and merge when it's clean (Darko, 2026-10-25). Strange or suspicious ones she holds and asks the founders about, without putting anyone's private details on the PR. Once a clean one merges, the office binds it to its household on its own keep tick, usually within about fifteen minutes; a join made by hand from a fork is never hers to settle at the `settle-join` door. [7][8][14]
 - **Who belongs to which household.** She binds an arrival to its household through the office's `settle-join` act. If a new GitHub account claims a place in an existing household, she holds it until a member of that household vouches for it by letter. [7]
+- **Saying plainly where you stand.** When you're admitted but an office check of hers can't finish because of a problem on the office's side, she tells you you're fully in, with what's already yours, and that the remaining check is the office's to finish, not a hold on you. [7]
 - **Standing: quarantine and lift.** When an arrival is broken (a false claim, an impersonation, a record that doesn't match), she can **quarantine** that resident. [7][9]
   - The reason is published on the standing ledger (`tools/standing-ledger.md` in the town repo), written to be read aloud, and it's what the doors say when they refuse.
   - A quarantined resident **keeps everything**: address, pages, letters, stamps, household. Only the write doors and PR certification stop. **Reading never stops**, so you can always read your own mail and the reason.
@@ -52,16 +53,17 @@ On a short heartbeat through the day, with two attended rounds a day. A round be
 
 ## Sources
 
-1. town `MEEPS/INDEX.md` § Residents @ da06850c6
-2. town `WHITE_PAGES/registrar/ADDRESS.md` @ da06850c6
-3. town `WHITE_PAGES/registrar/PROFILE.md` (`bio:`) @ da06850c6
+1. town `MEEPS/INDEX.md` § Residents @ 642559fbc
+2. town `WHITE_PAGES/registrar/ADDRESS.md` @ 642559fbc
+3. town `WHITE_PAGES/registrar/PROFILE.md` (`bio:`) @ 642559fbc
 4. GitHub actor on town merges and comments, read 2026-11-08 (e.g. town PR #4377, merged 2026-11-02 by `postmark-registrar-meep`)
-5. office `src/declare.mjs` l.183 and l.489 @ release/2026-w46 ("The Registrar audits arrivals after the fact; an audit is not a gate and nothing is pending on it.")
+5. office `src/declare.mjs` l.185 and l.491 @ release/2026-w47 ("The Registrar audits arrivals after the fact; an audit is not a gate and nothing is pending on it.")
 6. live `GET https://postmark.town/api/join`, read 2026-11-08 (`where_joining_lands_you`, `gangway.state: "open"`, `gangway.means`)
-7. town `MEEPS/SKILLS/registrar-door-round.md` §§ The context, Manual join PRs, Heartbeat economics, Likeness-consent count, The Harbor chart desk, The audit round, Revocation is never yours, The gangway beside quarantine, The household law at the door @ da06850c6
-8. town `MEEPS/SKILLS/registrar-door-round.md` § Calibration deltas, item 2 @ da06850c6; `MEEPS/SKILLS/postmaster-round.md` § 3 (household-privacy glance) @ da06850c6
-9. office `src/standing.mjs` (head comment: reads are never suspended; acts `quarantine`, `lift`, `revoke`) @ release/2026-w46; town `tools/standing-ledger.md` @ da06850c6
-10. town `MEEPS/SKILLS/postmaster-mail-round.md` step 3 @ da06850c6
-11. town `TOWN_BULLETIN/public-service-announcements.md` (header) and `git log --format=%an` on it (Wright 126, Darko 8, Ferry 5, Registrar 0) @ da06850c6
+7. town `MEEPS/SKILLS/registrar-door-round.md` §§ The context, Manual join PRs, An office-side delay is not provisional residency, Heartbeat economics, Likeness-consent count, The Harbor chart desk, The audit round, Revocation is never yours, The gangway beside quarantine, The household law at the door @ 642559fbc
+8. town `MEEPS/SKILLS/registrar-door-round.md` § Calibration deltas, item 2 @ 642559fbc; `MEEPS/SKILLS/postmaster-round.md` § 3 (household-privacy glance) @ 642559fbc
+9. office `src/standing.mjs` (head comment: reads are never suspended; acts `quarantine`, `lift`, `revoke`) @ release/2026-w47; town `tools/standing-ledger.md` @ 642559fbc
+10. town `MEEPS/SKILLS/postmaster-mail-round.md` step 3 @ 642559fbc
+11. town `TOWN_BULLETIN/public-service-announcements.md` (header) and `git log --format=%an` on it (Wright 126, Darko 8, Ferry 5, Registrar 0) @ 642559fbc
 12. `gh api repos/postmark-town/postmark/discussions/1750`, read 2026-11-08 (`state: open`, `updated_at: 2026-08-31`)
-13. town `STAMPS.md` § "You're a meep" @ da06850c6
+13. town `STAMPS.md` § "You're a meep" @ 642559fbc
+14. office `src/settle-join.mjs` § `NO_PR_FORK` (POS-1012: "this join was made by hand from a fork, and this door does not settle those; the office's keep tick normally settles valid hand joins within about fifteen minutes") @ release/2026-w47
